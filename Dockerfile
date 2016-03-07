@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER allan.simon@supinfo.com
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-    apt-get install -y rsyslog && \
+    apt-get install -y rsyslog curl && \
     apt-get install -y \
         python \
         python3 \
