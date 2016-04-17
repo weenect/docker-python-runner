@@ -1,8 +1,7 @@
 FROM debian:jessie
 MAINTAINER allan.simon@supinfo.com
 ENV DEBIAN_FRONTEND=noninteractive
-RUN
-    apt-key adv --keyserver keys.gnupg.net --recv-keys 9E3E53F19C7DE460 && \
+RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 9E3E53F19C7DE460 && \
     echo "deb http://repo.aptly.info/ squeeze main" > /etc/apt/sources.list.d/aptly.list && \
     apt-get update && \
     apt-get install -y rsyslog curl && \
