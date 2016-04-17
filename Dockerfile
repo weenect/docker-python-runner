@@ -16,9 +16,9 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 9E3E53F19C7DE460 && \
         libffi-dev \
         libssl-dev && \
     pip install tox && \
-    apt-get install \
+    apt-get install -y \
         ruby-dev \
         rubygems \
         build-essential && \
     gem install fpm && \
-    apt-get install aptly
+    apt-get install -y aptly
