@@ -10,11 +10,13 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 9E3E53F19C7DE460 && \
         python3 \
         python-pip && \
     apt-get install -y \
+        aptitude \
         git-core \
         python-dev \
         python3-dev \
         libffi-dev \
         libssl-dev && \
+    pip install ansible && \
     pip install tox && \
     apt-get install -y \
         ruby-dev \
