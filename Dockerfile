@@ -9,6 +9,7 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 9E3E53F19C7DE460 && \
     apt-get install -y \
         python \
         python3 \
+        python3-dev \
         python-pip && \
     apt-get install -y \
         aptitude \
