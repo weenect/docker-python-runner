@@ -8,11 +8,10 @@ RUN apt-get update && \
         python \
         python3 \
         python3-pip \
-        python-pip && \
-    apt-get install -y \
+        python-pip \
         aptitude \
         git-core \
-        build-essential && \
+        build-essential
         libyaml-dev \
         python-dev \
         python3-dev \
