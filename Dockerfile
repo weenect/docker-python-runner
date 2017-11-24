@@ -17,5 +17,6 @@ RUN apt-get update && \
         python3-dev \
         libffi-dev \
         libssl-dev && \
-    pip install --upgrade setuptools ansible && \
+    pip install --upgrade setuptools && \
+    pip ansible && \
     pip install tox
