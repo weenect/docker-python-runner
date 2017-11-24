@@ -11,7 +11,7 @@ RUN apt-get update && \
         python-pip \
         aptitude \
         git-core \
-        build-essential
+        build-essential \
         libyaml-dev \
         python-dev \
         python3-dev \
