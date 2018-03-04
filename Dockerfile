@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-get install -y rsyslog curl && \
     apt-get install -y \
         python \
+        python-setuptools \
         python3 \
         python3-pip \
         aptitude \
