@@ -8,7 +8,6 @@ RUN apt-get update && \
         python \
         python3 \
         python3-pip \
-        python-pip \
         aptitude \
         git-core \
         build-essential \
@@ -17,6 +16,7 @@ RUN apt-get update && \
         python3-dev \
         libffi-dev \
         libssl-dev && \
+    easy_install pip && \
     pip install --upgrade setuptools && \
     pip install ansible && \
     pip install tox
