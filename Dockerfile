@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian
 MAINTAINER allan.simon@supinfo.com
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=C.UTF-8
